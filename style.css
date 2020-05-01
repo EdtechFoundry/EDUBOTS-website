@@ -1649,20 +1649,13 @@ p.dreamsContent {
 	border-radius: 40px;
 }
 
-.rightBorder {
-	border: 0;
-	border-right-width: 4px;
-	border-right-style: solid;
-	border-right-color: #fff;
-}
-
 .paddingCNcontainer {
 	padding: 60px 18px;
 }
 
 .CNcontainer.countdownContainer,
 .CNcontainer.newsletterContainer {
-	margin: 16px;
+	margin: 26px auto;
 }
 
 .CNcontainerHeader {
@@ -1786,6 +1779,33 @@ a .countTimeContainerSignUp,
 
 /* ======== RESPONSIVE STYLES START ======== */
 
+/* Larger screens */
+@media only screen and (min-width: 1024px) {
+	.bordered {
+		border: 0;
+		border-right-width: 4px;
+		border-right-style: solid;
+		border-right-color: #fff;
+	}
+
+}
+
+/* Tablet and mobile screens */
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+
+	.bordered {
+		border: 0;
+		border-bottom-width: 4px;
+		border-bottom-style: solid;
+		border-bottom-color: #fff;
+		width: 100%;
+
+	}
+
+	a .countTimeContainerSignUp {
+		margin-bottom: 24px;
+	}
+}
 
 /* Smaller Smarthphones */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -1847,7 +1867,7 @@ a .countTimeContainerSignUp,
 	}
 
 	.numbersCount {
-		font-size: 28px;
+		font-size: 30px;
 		margin: 10px auto;
 	}
 
@@ -1860,11 +1880,132 @@ a .countTimeContainerSignUp,
 		font-size: 14px;
 		margin: 8px auto;
 	}
+
+	.CNcontainer {
+		border-radius: 20px;
+	}
+
+	.paddingCNcontainer {
+		padding: 40px 18px;
+	}
+
+	.CNcontainerHeader {
+		font-size: 24px;
+		margin-bottom: 14px;
+	}
+
+	.CNcontainerSubTitle.countdown {
+		font-size: 14px;
+	}
+
+	.countTimeContainer,
+	.newsletterSignUpArea {
+		margin: 34px auto;
+	}
+
+	.countTime {
+		padding: 12px 0;
+		white-space: pre-line;
+		font-size: 16px;
+		margin: 8px auto;
+	}
+
+	.CNcontainerSubTitle.newsletter {
+		font-size: 15px;
+	}
+
+	.newsletterSignUpText,
+	.newsletterSignUpTextBottom {
+		font-size: 12px;
+		margin: 24px auto;
+	}
+
+	.countTimeContainerSignUp {
+		border-radius: 32px;
+		cursor: pointer;
+	}
+
+	a .countTimeContainerSignUp {
+		text-decoration: none;
+	}
+
+	a .countTimeContainerSignUp,
+	.newsletterSignUpField.input,
+	.newsletterSignUpField.submit {
+		font-weight: 600;
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.countTimeContainerSignUp:hover,
+	.newsletterSignUpField.submit:hover {
+		background-color: rgb(155, 112, 42);
+		color: #ffffff;
+		transition-delay: 0.2s;
+		transition-duration: 1s;
+		transition-property: background-color;
+		transition-timing-function: linear;
+	}
+
+	.newsletterSignUpText,
+	.newsletterSignUpTextBottom {
+		font-size: 12px;
+	}
+
+	.newsletterSignUpText {
+		margin: 20px auto;
+	}
+
+	.newsletterSignUpText,
+	.newsletterSignUpTextBottom {
+		margin: 80px auto 20px;
+	}
+
+	.newsletterSignUpTextBottom {
+		color: #AEE4D5;
+	}
+
+	.newsletterSignUpField {
+		margin: 14px auto;
+	}
+
+	.newsletterSignUpField input {
+		border-radius: 32px;
+		border: none;
+		outline: 0;
+	}
+
+	.newsletterSignUpField.input,
+	.newsletterSignUpField.submit {
+		width: 100%;
+		margin: 0;
+	}
+
+	.newsletterSignUpField.input {
+		background-color: #ffffff;
+		color: #4b4b4b;
+		padding-left: 1rem;
+	}
+
+	.newsletterSignUpField.submit {
+		background-color: #F2BE69;
+		color: #ffffff;
+		cursor: pointer;
+	}
+
+	::placeholder {
+		color: #c4c4c4;
+	}
+
+	.newsletterSignUpField.submit {
+		position: absolute;
+		top: 18px;
+		right: 26px;
+		width: 80%;
+	}
 }
 
-
 /* ======== RESPONSIVE STYLES END ======== */
-
 
 
 
