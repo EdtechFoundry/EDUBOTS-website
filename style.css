@@ -1495,29 +1495,33 @@ a {
 	src: url("fonts/times-new-roman.ttf");
 }
 
+.row-bloc-7-margin-top-eunit {
+	margin-top: -100px;
+}
+
 .dreams {
 	color: #212121;
 	border-radius: 6px;
-	padding: 0 10px 1.125rem;
+	padding: 0 10px 1rem;
 	height: 100%;
 	width: 100%;
 	max-width: 100%;
 }
 
 .dreamsImg {
-	width: 30%;
-	max-width: 30%;
-	margin: 0 0 0 5px;
+	margin: 0;
 }
 
 .dreamsText {
-	width: 70%;
-	max-width: 70%;
 	line-height: 28px;
 }
 
 .dreamsContent {
 	font-family: 'Times New Roman', Times, serif;
+}
+
+p.dreamsContent {
+	margin-bottom: 0;
 }
 
 .dreamsTitle {
@@ -1553,10 +1557,6 @@ a {
 .pd-0-11 {
 	padding: 0 11px !important;
 
-}
-
-.mt--100 {
-	margin-top: -100px;
 }
 
 .pt-30 {
@@ -1619,7 +1619,7 @@ a {
 
 .numbersTextExplaind {
 	color: #9e9e9e;
-	font-size: normal;
+	font-size: inherit;
 	margin: 16px auto;
 }
 
@@ -1632,7 +1632,16 @@ a {
 
 
 
-/* ====== 3. Countdown and Newsletter block START ======= */
+/* ====== 3. Partners Image START ======= */
+
+.partnersImg {
+	cursor: pointer;
+}
+
+/* ====== 3. Partners Image START ======= */
+
+
+/* ====== 4. Countdown and Newsletter block START ======= */
 
 .CNcontainer {
 	background-color: #3BBE98;
@@ -1746,7 +1755,8 @@ a .countTimeContainerSignUp,
 
 .newsletterSignUpField.input {
 	background-color: #ffffff;
-	color: #c4c4c4;
+	color: #4b4b4b;
+	padding-left: 1rem;
 }
 
 .newsletterSignUpField.submit {
@@ -1764,7 +1774,7 @@ a .countTimeContainerSignUp,
 	right: 48px;
 }
 
-/* ====== 3. Countdown and Newsletter block END ======= */
+/* ====== 4. Countdown and Newsletter block END ======= */
 
 
 
@@ -1780,6 +1790,14 @@ a .countTimeContainerSignUp,
 /* Smaller Smarthphones */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
+	.eunit-img {
+		margin: 60px auto 120px auto;
+	}
+
+	.eunit-img-2 {
+		margin-top: -220px;
+	}
+
 	.dreamsSecond,
 	.dreamsFourth {
 		margin-top: 8px;
@@ -1787,15 +1805,13 @@ a .countTimeContainerSignUp,
 	}
 
 	.dreamsImg {
-		width: 25%;
-		max-width: 25%;
-		margin: 0 0 0 5px;
+		margin: 0;
 	}
 
 	.dreamsText {
-		width: 70%;
-		max-width: 70%;
 		line-height: 28px;
+		margin-top: 18px;
+		margin-left: 18px;
 	}
 
 	.dreamsContent {
@@ -1810,6 +1826,39 @@ a .countTimeContainerSignUp,
 
 	.dreamsTextExplained {
 		font-size: 18px;
+	}
+
+	.numbers {
+		border-radius: 20px;
+	}
+
+	.numbersHeading {
+		font-size: 14px;
+	}
+
+	.numbersHeadingSecond {
+		margin: 10px auto;
+		font-size: 26px;
+	}
+
+	.numbersHeadingThird {
+		font-size: 18px;
+		margin: 2px auto 12px;
+	}
+
+	.numbersCount {
+		font-size: 28px;
+		margin: 10px auto;
+	}
+
+	.numbersTitle {
+		font-size: 14px;
+		margin: 0;
+	}
+
+	.numbersTextExplaind {
+		font-size: 14px;
+		margin: 8px auto;
 	}
 }
 
