@@ -13,17 +13,17 @@
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://www.edubots.eu">
+	<meta property="og:url" content="https://edubots.differ.chat">
 	<meta property="og:title" content="EDUBOTS - Best Practices of Pedagogical Chatbots in Higher Education">
 	<meta property="og:description" content="We aim to increase student retention by automating pedagogical feedback for educators and giving personalized follow ups to students.">
-	<meta property="og:image" content="https://www.edubots.eu/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+	<meta property="og:image" content="https://edubots.differ.chat/img/social_media_banner.jpg">
 
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://www.edubots.eu">
+	<meta property="twitter:url" content="https://edubots.differ.chat">
 	<meta property="twitter:title" content="EDUBOTS - Best Practices of Pedagogical Chatbots in Higher Education">
 	<meta property="twitter:description" content="We aim to increase student retention by automating pedagogical feedback for educators and giving personalized follow ups to students.">
-	<meta property="twitter:image" content="https://www.edubots.eu/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+	<meta property="twitter:image" content="https://edubots.differ.chat/img/social_media_banner.jpg">
 
 
 	<link rel="shortcut icon" type="image/ico" href="favicon.ico">
@@ -164,6 +164,32 @@
 		gtag('config', 'UA-65878811-4');
 	</script>
 	<!-- Analytics END -->
+
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Jul 31,2020 12:00:00").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+			// Get today's date and time
+			var now = new Date().getTime();
+
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+
+			// Time calculations for days, hours, minutes and seconds
+			var days = "" + Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = "" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = "" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = "" + Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("countDay").innerHTML = days;
+			document.getElementById("countHrs").innerHTML = hours;
+			document.getElementById("countMin").innerHTML = minutes;
+			document.getElementById("countSec").innerHTML = seconds;
+		}, 1000);
+	</script>
 
 </head>
 
@@ -474,7 +500,7 @@
 						</div>
 						<div class="row">
 							<div class="col-sm-9 offset-sm-2 numbersHeadingThird">
-								<div style="margin-bottom: 1em;">White paper:<br>
+								<div class="text-body" style="margin-bottom: 1em;">White Paper:<br>
 									Best Practices of Pedagogical Chatbots in Higher Education
 								</div>
 								<div style="font-size: small;">
@@ -485,7 +511,7 @@
 							</div>
 						</div>
 						<div class="numbersHeadingSecond">
-							Four pilot phases
+							Four Pilot Phases
 						</div>
 					</div>
 				</div>
@@ -604,7 +630,6 @@
 		</div>
 	</div>
 </div>
-</div>
 <!-- bloc-11 END -->
 
 <!-- bloc-12 -->
@@ -626,22 +651,30 @@
 								</div>
 								<div class="countTimeContainer">
 									<div class="row">
-										<div class="col-sm-4 col-lg-4">
-											<div class="countTime">10
+										<div class="col-sm-3 col-lg-3">
+											<div class="countTime"><span id="countDay"></span>
 												Days
 											</div>
 										</div>
-										<div class="col-sm-4 col-lg-4">
-											<div class="countTime">4
+										<div class="col-sm-3 col-lg-3">
+											<div class="countTime"><span id="countHrs"></span>
 												Hours
 											</div>
 										</div>
-										<div class="col-sm-4 col-lg-4">
-											<div class="countTime">4
-												Hours
+										<div class="col-sm-3 col-lg-3">
+											<div class="countTime"><span id="countMin"></span>
+												Minutes
+											</div>
+										</div>
+										<div class="col-sm-3 col-lg-3">
+											<div class="countTime"><span id="countSec"></span>
+												Seconds
 											</div>
 										</div>
 									</div>
+
+									<br><br>
+									<div class="small">(31.7.2020 12:00:00 CET)</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-6 offset-sm-3">
@@ -660,9 +693,10 @@
 									Our Newsletter
 								</div>
 								<div class="CNcontainerSubTitle newsletter">
-									Are you in education? Are you interested in learning more about chatbots in
-									education? Are you looking to
-									streamline your education processes?
+									Are you in education?
+									Are you interested in learning more about chatbots in
+									education?
+									Are you looking to streamline your education processes?
 								</div>
 								<div class="newsletterSignUpArea">
 									<div class="newsletterSignUpText text-left">
@@ -681,11 +715,7 @@
 										</div>
 									</div>
 									<div class="newsletterSignUpTextBottom text-left">
-										PS. We will never spam you. You will receive monthly updates which you
-										can
-										stop
-										at
-										any point
+										PS: We will never spam you. You will receive monthly updates which you can stop at any point
 									</div>
 								</div>
 							</div>
@@ -709,7 +739,7 @@
 				</h4>
 				<p class="text-secondary small">
 					<br>
-					<strong>EDUBOTS - Best Practise of Chatbots in Higher Education</strong><br>
+					<strong>EDUBOTS - Best Practices of Pedagogical Chatbots in Higher Education</strong><br>
 					Reference Number: 612466-EPP-1-2019-1-NO-EPPKA2-KA<br>
 					<br><br>
 					<strong>Coordinator</strong><br>
