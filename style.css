@@ -3,6 +3,10 @@
         Built with Blocs
 -----------------------------------------------------------------------------------*/
 
+*:focus{
+    outline: 1px solid #6BC0A3;
+}
+
 body {
     margin: 0;
     padding: 0;
