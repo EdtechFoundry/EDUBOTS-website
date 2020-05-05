@@ -3,7 +3,7 @@
         Built with Blocs
 -----------------------------------------------------------------------------------*/
 
-*:focus{
+*:focus {
     outline: 1px solid #6BC0A3;
 }
 
@@ -214,19 +214,19 @@ a:hover {
     color: rgb(64, 64, 64);
 }
 
-.btco-menu li > a {
+.btco-menu li>a {
     padding: 10px 15px;
     color: #000;
 }
 
 .btco-menu .active a:focus,
 .btco-menu li a:focus,
-.navbar > .show > a:focus {
+.navbar>.show>a:focus {
     background: transparent;
     outline: 0;
 }
 
-.dropdown-menu .show > .dropdown-toggle::after {
+.dropdown-menu .show>.dropdown-toggle::after {
     transform: rotate(-90deg);
 }
 
@@ -1439,50 +1439,6 @@ a {
 /* ========== EUNIT BLOCK START ========= */
 /* ====================================== */
 
-/* Infinity Icon from https://css.gg START */
-
-.gg-infinity {
-    background: linear-gradient(to left,
-    currentColor 5px, transparent 0) no-repeat -4px 4px/2px 2px,
-    linear-gradient(to left,
-            currentColor 5px, transparent 0) no-repeat 4px 4px/2px 2px;
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: rotate(-45deg) scale(var(--ggs, 1));
-    width: 10px;
-    height: 18px;
-    border: 4px solid transparent;
-    box-shadow: inset 0 0 0 2px;
-}
-
-.gg-infinity::after,
-.gg-infinity::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border: 2px solid;
-    border-radius: 200px;
-    transform: rotate(45deg)
-}
-
-.gg-infinity::after {
-    border-right-color: transparent;
-    left: -8px;
-    top: -4px
-}
-
-.gg-infinity::before {
-    border-left-color: transparent;
-    right: -8px;
-    top: 4px
-}
-
-/* Infinity Icon from https://css.gg END */
-
 
 /* ======== GENERAL STYLES START ======== */
 
@@ -1633,9 +1589,10 @@ p.dreamsContent {
 
 /* ====== 3. Partners Image START ======= */
 
-.partnersImg {
+.partnersImg image {
     cursor: pointer;
     margin: 1em auto;
+    max-height: 4em;
 }
 
 /* ====== 3. Partners Image START ======= */
