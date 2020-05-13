@@ -3,6 +3,10 @@
         Built with Blocs
 -----------------------------------------------------------------------------------*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 *:focus {
     outline: 1px solid #6BC0A3;
 }
