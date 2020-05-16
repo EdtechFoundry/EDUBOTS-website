@@ -1609,7 +1609,8 @@ a .countTimeContainerSignUp,
 
 .newsletterSignUpField.submit {
     position: absolute;
-    right: 48px;
+    left: 258px;
+    top: -41px;
 }
 
 
@@ -1806,7 +1807,7 @@ a .countTimeContainerSignUp,
     .newsletterSignUpField.submit {
         position: absolute;
         top: 18px;
-        right: 26px;
+        left: 26px;
         width: 80%;
     }
 }
