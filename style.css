@@ -24,14 +24,18 @@ body {
     overflow-x: hidden;
 }
 
+
 /* Prevents unwanted scroll space when scroll FX used. */
+
 a,
 button {
     transition: background .3s ease-in-out;
     outline: none !important;
 }
 
+
 /* Prevent ugly blue glow on chrome and safari */
+
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -48,6 +52,7 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
+
 
 /* = Blocs
 -------------------------------------------------------------- */
@@ -70,6 +75,7 @@ a:hover {
     padding-right: 0;
 }
 
+
 /* Sizes */
 
 .bloc-xl {
@@ -87,6 +93,7 @@ a:hover {
 .bloc-sm {
     padding: 20px 50px;
 }
+
 
 /* = Full Width Blocs 
 -------------------------------------------------------------- */
@@ -183,6 +190,7 @@ a:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
+
 /* Row Margin Offsets */
 
 .voffset {
@@ -196,6 +204,7 @@ a:hover {
 .voffset-lg {
     margin-top: 80px;
 }
+
 
 /* Dividers */
 
@@ -213,7 +222,9 @@ a:hover {
     padding-right: inherit;
 }
 
+
 /* Handle Multi Level Navigation */
+
 .navbar-light .navbar-nav .nav-link {
     color: rgb(64, 64, 64);
 }
@@ -234,6 +245,7 @@ a:hover {
     transform: rotate(-90deg);
 }
 
+
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
@@ -241,6 +253,7 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -252,7 +265,9 @@ a:hover {
     background: rgba(0, 0, 0, .3);
 }
 
+
 /* Prevent ugly blue glow on chrome and safari */
+
 button {
     outline: none !important;
 }
@@ -321,6 +336,7 @@ button {
     font-size: 14px;
     opacity: 1;
 }
+
 
 /* = Custom Styling
 -------------------------------------------------------------- */
@@ -643,6 +659,7 @@ a {
     margin-top: 99px;
 }
 
+
 /* = Colour
 -------------------------------------------------------------- */
 
@@ -661,6 +678,7 @@ a {
     color: #6BC0A3 !important;
 }
 
+
 /* Button colour styles */
 
 .btn-medium-aquamarine {
@@ -677,6 +695,7 @@ a {
     color: #6BC0A3 !important;
     border-color: #6BC0A3 !important;
 }
+
 
 /* Link colour styles */
 
@@ -696,17 +715,18 @@ a {
     color: #1a1a1a !important;
 }
 
+
 /* Bloc image backgrounds */
 
 
 /* = Mobile adjustments 
 -------------------------------------------------------------- */
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
@@ -720,19 +740,16 @@ a {
     .container {
         width: 100%;
     }
-
     .page-container,
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
     }
-
     /* Prevent unwanted side scroll on mobile */
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
-
     /* iPhone X Notch Support*/
     .bloc-group,
     .bloc-group .bloc {
@@ -746,49 +763,39 @@ a {
         overflow-x: hidden;
         position: relative;
     }
-
     .bloc-tile-2 .container,
     .bloc-tile-3 .container,
     .bloc-tile-4 .container {
         padding-left: 0;
         padding-right: 0;
     }
-
     .a-block {
         padding: 0 10px;
     }
-
     .btn-dwn {
         display: none;
     }
-
     .voffset {
         margin-top: 5px;
     }
-
     .voffset-md {
         margin-top: 20px;
     }
-
     .voffset-lg {
         margin-top: 30px;
     }
-
     form {
         padding: 5px;
     }
-
     .close-lightbox {
         display: inline-block;
     }
-
     .blocsapp-device-iphone5 {
         background-size: 216px 425px;
         padding-top: 60px;
         width: 216px;
         height: 425px;
     }
-
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
@@ -801,51 +808,42 @@ a {
         margin-top: 0px;
         margin-left: 19px;
     }
-
     .btn-style {
         width: 44.19%;
         margin-left: 2px;
         margin-top: -1px;
     }
-
     .img-bloc-3-margin-top {
         width: 344px;
         margin-top: -1px;
     }
-
     .img-margin-top {
         width: 344px;
         margin-top: 0px;
     }
-
     .img-6-margin-top {
         margin-top: -1px;
         width: 344px;
     }
-
     .img-7-margin-top {
         margin-top: -225px;
         width: 253px;
     }
-
     .img-bloc-4-margin-top {
         margin-top: -225px;
         width: 253px;
     }
-
     .img-all-logos-margin-top {
         width: 645px;
         margin-top: 2px;
         margin-bottom: 2px;
     }
-
     .h2-margin-top {
         width: 99.71%;
         font-size: 32px;
         margin-left: 23px;
         margin-top: 0px;
     }
-
     .p-style {
         width: 100%;
         font-size: 16px;
@@ -853,159 +851,126 @@ a {
         margin-left: 21px;
         margin-top: 16px;
     }
-
     .h3-bloc-13-style {
         margin-left: -31px;
         margin-top: -3px;
         font-size: 25px;
     }
-
     .p-bloc-13-style {
         margin-left: -29px;
         width: 99.85%;
         margin-top: -202px;
     }
-
     .h4-about-style {
         font-size: 16px;
     }
-
     .h4-get-the-app-style {
         font-size: 16px;
     }
-
     .img-margin-bottom {
         width: 300px;
         margin-top: 2px;
     }
-
     .img-5-margin-top {
         width: 344px;
         margin-top: -1px;
     }
-
     .h3-style {
         margin-top: 148px;
         font-size: 18px;
     }
-
     .h4-style {
         font-size: 20px;
         margin-top: 75px;
     }
-
     .h2-2-style {
         font-size: 28px;
         margin-top: 0px;
     }
-
     .h2-style {
         font-size: 28px;
         margin-top: -6px;
     }
-
     .row-margin-top {
         margin-top: 1px;
     }
-
     .h2-3-margin-top {
         font-size: 24px;
         margin-top: 299px;
     }
-
     .p-bloc-6-style {
         font-size: 15px;
         margin-top: -1px;
     }
-
     .p-bloc-7-style {
         font-size: 15px;
         width: 94.48%;
         margin-top: 12px;
     }
-
     .h2-bloc-7-style {
         font-size: 24px;
         margin-top: 2px;
     }
-
     .row-bloc-7-margin-top {
         margin-top: 1px;
     }
-
     .img-style {
         width: 344px;
         margin: -1px -121px 30px 33px;
     }
-
     .row-bloc-14-margin-top {
         margin-top: -73px;
     }
-
     .img-bloc-13-margin-bottom {
         margin-top: 35px;
         width: 300px;
         margin-right: -124px;
         margin-left: -216px;
     }
-
     .img-8-margin-top {
         margin-top: 309px;
         margin-left: 21px;
     }
-
     .img-bloc-8-margin-top {
         margin-top: 0px;
     }
-
     .img-group-29-margin-top {
         margin-top: 3px;
     }
-
     .h2-47462-style {
         margin-left: -16px;
         margin-top: 29px;
     }
-
     .img-bloc-7-margin-top {
         margin-top: 0px;
     }
-
     .h4-our-partners-style {
         margin-top: -1px;
         margin-bottom: 25px;
     }
-
     .h4-testimonials-style {
         margin-top: -29px;
     }
-
     .bloc-margin-top {
         margin-top: -1px;
     }
-
     .bloc-bloc-7-margin-top {
         margin-top: 2px;
     }
-
     .bloc-bloc-5-margin-bottom {
         margin-bottom: 2px;
     }
-
     .bloc-bloc-6-margin-top {
         margin-top: 0px;
     }
-
     /* MD Row Margin Offsets */
     .voffset-md {
         margin-top: 30px;
     }
-
     /* MD Text Margin Offsets */
     .mg-clear-md {
         margin: 0;
     }
-
 }
 
 @media (max-width: 767px) {
@@ -1013,54 +978,44 @@ a {
         width: 482px;
         margin-top: 1px;
     }
-
     .row-style {
         width: 69.2%;
     }
-
     .row-margin-right {
         margin-right: -2px;
     }
-
     .h2-margin-top {
         font-size: 34px;
         margin-top: 15px;
         margin-left: 3px;
     }
-
     .p-style {
         font-size: 18px;
         margin-top: 17px;
         margin-left: -1px;
         width: 100%;
     }
-
     .img-margin-bottom {
         width: 526px;
         height: 200px;
     }
-
     .img-bloc-3-margin-top {
         width: 453px;
         margin-top: 20px;
     }
-
     .img-6-margin-top {
         width: 453px;
         margin-bottom: -1px;
         margin-top: 20px;
     }
-
     .img-5-margin-top {
         width: 453px;
         margin-top: -1px;
     }
-
     .img-margin-top {
         width: 453px;
         margin-top: 1px;
     }
-
     .btn-margin-top {
         width: 34.98%;
         margin-left: 70px;
@@ -1069,7 +1024,6 @@ a {
         padding-bottom: 10px;
         margin-bottom: -5px;
     }
-
     .btn-style {
         width: 33.27%;
         margin-top: 4px;
@@ -1077,136 +1031,107 @@ a {
         padding-bottom: 10px;
         margin-bottom: -2px;
     }
-
     .p-bloc-13-style {
         margin-bottom: 60px;
         width: 100%;
         font-size: 16px;
         margin-left: -29px;
     }
-
     .img-style {
         width: 265px;
         margin-top: 23px;
     }
-
     .img-bloc-7-margin-top {
         margin-top: -1px;
         width: 318px;
     }
-
     .h2-3-margin-top {
         margin-top: -2px;
     }
-
     .h4-style {
         margin-top: 109px;
         font-size: 16px;
     }
-
     .bloc-bloc-6-margin-top {
         margin-top: 23px;
     }
-
     .bloc-bloc-7-margin-top {
         margin-top: 239px;
     }
-
     .img-8-margin-top {
         margin-top: -1px;
         width: 300px;
     }
-
     .img-group-29-margin-top {
         margin-top: 6px;
         width: 526px;
     }
-
     .img-bloc-13-margin-bottom {
         width: 300px;
         margin-top: -149px;
     }
-
     .img-bloc-8-margin-top {
         margin-top: 2px;
     }
-
     .h4-testimonials-style {
         margin-top: -1px;
         font-size: 16px;
     }
-
     .h3-bloc-13-style {
         margin-top: -1px;
         font-size: 20px;
         margin-left: -35px;
         width: 100%;
     }
-
     .h2-style {
         font-size: 24px;
     }
-
     .h3-style {
         font-size: 16px;
     }
-
     .h2-2-style {
         font-size: 24px;
         margin-top: 4px;
     }
-
     .bloc-bloc-5-margin-bottom {
         margin-bottom: 99px;
     }
-
     .h4-our-partners-style {
         font-size: 16px;
         margin-top: -1px;
     }
-
     .p-bloc-10-style {
         font-size: 14px;
     }
-
     .h2-47462-style {
         font-size: 24px;
     }
-
     .p-bloc-7-style {
         margin-bottom: 390px;
         margin-top: 1px;
     }
-
     .h2-bloc-7-style {
         margin-top: 129px;
     }
-
     .row-bloc-7-margin-top {
         margin-top: 1px;
     }
-
     .bloc-margin-top {
         margin-top: -79px;
     }
-
     .p-bloc-6-style {
         margin-top: 25px;
     }
-
     .bloc-0-bloc-6-margin-top {
         margin-top: 146px;
     }
-
     .row-margin-top {
         margin-top: 1px;
     }
-
     /* Small Row Margin Offsets */
     .voffset-lg-sm {
         margin-top: 80px;
     }
-
 }
 
 @media (max-width: 575px) {
@@ -1215,46 +1140,37 @@ a {
         margin-top: 8px;
         margin-left: 1px;
     }
-
     .h2-margin-top {
         margin-top: 33px;
         font-size: 25px;
         width: 100%;
     }
-
     .p-style {
         width: 100%;
         font-size: 16px;
     }
-
     .img-all-logos-margin-top {
         width: 270px;
         margin-top: -1px;
     }
-
     .h2-47462-style {
         font-size: 16px;
     }
-
     .h4-testimonials-style {
         font-size: 14px;
         margin-top: -2px;
     }
-
     .h4-our-partners-style {
         font-size: 14px;
         margin-top: 0px;
     }
-
     .p-bloc-10-style {
         font-size: 16px;
         margin-top: 0px;
     }
-
     .img-margin-bottom {
         margin-top: -89px;
     }
-
     .h3-bloc-13-style {
         width: 100%;
         margin-left: -14px;
@@ -1262,185 +1178,152 @@ a {
         margin-top: -1px;
         margin-bottom: 453px;
     }
-
     .img-bloc-13-margin-bottom {
         margin-bottom: 50px;
         width: 270px;
         margin-top: -1px;
         margin-left: -183px;
     }
-
     .img-bloc-3-margin-top {
         margin-top: 20px;
         width: 270px;
     }
-
     .footer-link {
         text-align: center;
     }
-
     .btn-style {
         width: 100%;
         margin-left: 0px;
         margin-right: 8px;
         margin-top: 16px;
     }
-
     .h3-style {
         font-size: 16px;
         margin-top: 1px;
     }
-
     .h2-style {
         font-size: 20px;
         margin-top: -13px;
     }
-
     .img-margin-top {
         margin-top: 0px;
         width: 270px;
     }
-
     .img-6-margin-top {
         margin-top: 20px;
         width: 270px;
     }
-
     .img-5-margin-top {
         width: 270px;
         margin-top: 1px;
     }
-
     .h4-style {
         font-size: 16px;
         margin-top: 147px;
     }
-
     .h2-2-style {
         font-size: 20px;
     }
-
     .h2-bloc-7-style {
         font-size: 18px;
         width: 98.15%;
         margin-top: 106px;
     }
-
     .h2-3-margin-top {
         font-size: 18px;
         margin-top: 163px;
     }
-
     .p-bloc-6-style {
         font-size: 16px;
         width: 92.59%;
     }
-
     .p-bloc-7-style {
         font-size: 16px;
         width: 98.15%;
         margin-top: 3px;
     }
-
     .img-8-margin-top {
         margin-top: 26px;
     }
-
     .bloc-bloc-6-margin-top {
         margin-top: -155px;
     }
-
     .img-bloc-8-margin-top {
         width: 270px;
         margin-top: 1px;
     }
-
     .img-group-29-margin-top {
         width: 270px;
         margin-top: 0px;
     }
-
     .p-bloc-13-style {
         width: 100%;
         font-size: 14px;
         margin-top: 0px;
         margin-left: -16px;
     }
-
     .bloc-0-bloc-13-margin-top {
         margin-top: -274px;
     }
-
     .bloc-bloc-14-margin-top {
         margin-top: -1px;
     }
-
     .bloc-0-bloc-14-margin-top {
         margin-top: -31px;
     }
-
     .bloc-43240-margin-top {
         margin-top: -9px;
     }
-
     .row-margin-top {
         margin-top: -236px;
     }
-
     .img-bloc-7-margin-top {
         margin-top: -2px;
     }
-
     .bloc-bloc-13-margin-top {
         margin-top: -172px;
     }
-
     .bloc-0-bloc-6-margin-top {
         margin-top: 136px;
     }
-
     .row-bloc-13-margin-top {
         margin-top: 1px;
     }
-
     .link-margin-bottom {
         margin-bottom: 39px;
     }
-
     .link-android-margin-bottom {
         margin-bottom: 0px;
         margin-top: 40px;
     }
-
     .h4-about-style {
         margin-top: 28px;
     }
-
     /* Mobile Text Margin Offsets */
     .mg-sm-xs {
         margin-top: 10px;
         margin-bottom: 5px;
     }
-
     .mg-md-xs {
         margin-top: 10px;
         margin-bottom: 20px;
     }
-
     .mg-lg-xs {
         margin-top: 10px;
         margin-bottom: 40px;
     }
-
     .mg-clear-xs {
         margin: 0;
     }
-
 }
 
 
 /* ====================================== */
+
+
 /* ========== EUNIT BLOCK START ========= */
+
+
 /* ====================================== */
 
 
@@ -1515,7 +1398,6 @@ p.dreamsContent {
 
 .pd-0-11 {
     padding: 0 11px !important;
-
 }
 
 .pt-30 {
@@ -1529,6 +1411,7 @@ p.dreamsContent {
 .ml-10 {
     margin-left: 10px;
 }
+
 
 /* 1 ======= Dreams block END ======== */
 
@@ -1598,6 +1481,7 @@ p.dreamsContent {
     margin: 1em auto;
     max-height: 4em;
 }
+
 
 /* ====== 3. Partners Image START ======= */
 
@@ -1728,6 +1612,7 @@ a .countTimeContainerSignUp,
     right: 48px;
 }
 
+
 /* ====== 4. Countdown and Newsletter block END ======= */
 
 
@@ -1736,7 +1621,9 @@ a .countTimeContainerSignUp,
 
 /* ======== RESPONSIVE STYLES START ======== */
 
+
 /* Larger screens */
+
 @media only screen and (min-width: 1024px) {
     .bordered {
         border: 0;
@@ -1744,148 +1631,122 @@ a .countTimeContainerSignUp,
         border-right-style: solid;
         border-right-color: #fff;
     }
-
 }
 
-/* Tablet and mobile screens */
-@media only screen and (min-width: 320px) and (max-width: 1023px) {
 
+/* Tablet and mobile screens */
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
     .bordered {
         border: 0;
         border-bottom-width: 4px;
         border-bottom-style: solid;
         border-bottom-color: #fff;
         width: 100%;
-
     }
-
     a .countTimeContainerSignUp {
         margin-bottom: 24px;
     }
 }
 
-/* Smaller Smarthphones */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
 
+/* Smaller Smarthphones */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     .eunit-img {
         margin: 60px auto 120px auto;
     }
-
     .eunit-img-2 {
         margin-top: -220px;
     }
-
     .dreamsSecond,
     .dreamsFourth {
         margin-top: 8px;
         /* Creates margin on .dreamsSecond and .dreamsFourth for responsiveness */
     }
-
     .dreamsImg {
         margin: 0;
     }
-
     .dreamsText {
         line-height: 28px;
         margin-top: 18px;
         margin-left: 18px;
     }
-
     .dreamsContent {
         font-family: 'Times New Roman', Times, serif;
     }
-
     .dreamsTitle {
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 1.125rem;
     }
-
     .dreamsTextExplained {
         font-size: 18px;
     }
-
     .numbers {
         border-radius: 20px;
     }
-
     .numbersHeading {
         font-size: 14px;
     }
-
     .numbersHeadingSecond {
         margin: 10px auto;
         font-size: 26px;
     }
-
     .numbersHeadingThird {
         font-size: 18px;
         margin: 2px auto 12px;
     }
-
     .numbersCount {
         font-size: 30px;
         margin: 10px auto;
     }
-
     .numbersTitle {
         font-size: 14px;
         margin: 0;
     }
-
     .numbersTextExplaind {
         font-size: 14px;
         margin: 8px auto;
     }
-
     .CNcontainer {
         border-radius: 20px;
     }
-
     .paddingCNcontainer {
         padding: 40px 18px;
     }
-
     .CNcontainerHeader {
         font-size: 24px;
         margin-bottom: 14px;
     }
-
     .CNcontainerSubTitle.countdown {
         font-size: 14px;
     }
-
     .countTimeContainer,
     .newsletterSignUpArea {
         margin: 34px auto;
     }
-
     .countTime {
         padding: 12px 0;
         white-space: pre-line;
         font-size: 16px;
         margin: 8px auto;
     }
-
     .CNcontainerSubTitle.newsletter {
         font-size: 15px;
     }
-
     .newsletterSignUpText,
     .newsletterSignUpTextBottom {
         font-size: 12px;
         margin: 24px auto;
     }
-
     .countTimeContainerSignUp {
         border-radius: 32px;
         cursor: pointer;
     }
-
     a .countTimeContainerSignUp {
         text-decoration: none;
     }
-
     a .countTimeContainerSignUp,
     .newsletterSignUpField.input,
     .newsletterSignUpField.submit {
@@ -1893,7 +1754,6 @@ a .countTimeContainerSignUp,
         font-size: 14px;
         padding: 10px;
     }
-
     .countTimeContainerSignUp:hover,
     .newsletterSignUpField.submit:hover {
         background-color: rgb(155, 112, 42);
@@ -1903,57 +1763,46 @@ a .countTimeContainerSignUp,
         transition-property: background-color;
         transition-timing-function: linear;
     }
-
     .newsletterSignUpText,
     .newsletterSignUpTextBottom {
         font-size: 12px;
     }
-
     .newsletterSignUpText {
         margin: 20px auto;
     }
-
     .newsletterSignUpText,
     .newsletterSignUpTextBottom {
         margin: 80px auto 20px;
     }
-
     .newsletterSignUpTextBottom {
         color: #AEE4D5;
     }
-
     .newsletterSignUpField {
         margin: 14px auto;
     }
-
     .newsletterSignUpField input {
         border-radius: 32px;
         border: none;
         outline: 0;
     }
-
     .newsletterSignUpField.input,
     .newsletterSignUpField.submit {
         width: 100%;
         margin: 0;
     }
-
     .newsletterSignUpField.input {
         background-color: #ffffff;
         color: #4b4b4b;
         padding-left: 1rem;
     }
-
     .newsletterSignUpField.submit {
         background-color: #F2BE69;
         color: #ffffff;
         cursor: pointer;
     }
-
-    ::placeholder {
+     ::placeholder {
         color: #c4c4c4;
     }
-
     .newsletterSignUpField.submit {
         position: absolute;
         top: 18px;
@@ -1962,9 +1811,14 @@ a .countTimeContainerSignUp,
     }
 }
 
+
 /* ======== RESPONSIVE STYLES END ======== */
 
 
 /* ====================================== */
+
+
 /* ========== EUNIT BLOCK END =========== */
+
+
 /* ====================================== */
