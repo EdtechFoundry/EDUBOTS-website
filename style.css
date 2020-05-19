@@ -33,6 +33,10 @@ button {
     outline: none !important;
 }
 
+span a {
+    text-decoration: underline;
+}
+
 
 /* Prevent ugly blue glow on chrome and safari */
 
