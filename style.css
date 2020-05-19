@@ -37,6 +37,10 @@ span a {
     text-decoration: underline;
 }
 
+h1 {
+    font-size: 26pt;
+}
+
 
 /* Prevent ugly blue glow on chrome and safari */
 
