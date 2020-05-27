@@ -39,9 +39,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin,latin-ext"
           rel="stylesheet" type="text/css">
 
-
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
 
     <!-- Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -698,23 +697,48 @@
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>
     window.cookieconsent.initialise({
-        "palette": {
-            "popup": {
-                "background": "#efefef",
-                "text": "#404040"
+            "palette": {
+                "popup": {
+                    "background": "#efefef",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "#8ec760",
+                    "text": "#ffffff"
+                }
             },
-            "button": {
-                "background": "#8ec760",
-                "text": "#ffffff"
+            "theme": "edgeless",
+            "position": "bottom-right",
+            "type": "opt-out",
+            "content": {
+                "href": "https://www.differ.chat/privacy"
+            },
+            onInitialise: function (status) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type === 'opt-out' && !didConsent) {
+                    // disable cookies
+                    window['ga-disable-UA-65878811-4'] = true;
+                }
+            },
+            onStatusChange: function (status, chosenBefore) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type === 'opt-out' && !didConsent) {
+                    // disable cookies
+                    window['ga-disable-UA-65878811-4'] = true;
+                }
+            },
+            onRevokeChoice: function () {
+                var type = this.options.type;
+                if (type === 'opt-out') {
+                    // enable cookies
+                    window['ga-disable-UA-65878811-4'] = true;
+                }
             }
-        },
-        "theme": "edgeless",
-        "position": "bottom-right",
-        "type": "opt-out",
-        "content": {
-            "href": "https://www.differ.chat/privacy"
         }
-    });
+    );
+
 </script>
 </body>
 
