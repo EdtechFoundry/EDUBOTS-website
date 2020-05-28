@@ -9,7 +9,7 @@
     <!-- Primary Meta Tags -->
     <meta name="title" content="EDUBOTS">
     <meta name="description" content="Realizing the Potential of Chatbots in Higher Education">
-    <meta name="keywords" content="bots,chatbots,education,higher education,best practise">
+    <meta name="keywords" content="bots,chatbots,education,higher education,best practise,research,european union">
     <meta name="author" content="Edtech Foundry AS"/>
     <meta name="copyright" content="Edtech Foundry AS"/>
 
@@ -34,31 +34,14 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?7698">
     <link rel="stylesheet" type="text/css" href="style.css?8251">
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/cookieconsent.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap&subset=latin,latin-ext" rel="stylesheet"
           type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap&subset=latin,latin-ext"
           rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" type="text/css"
-          href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
-
-    <!-- Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65878811-4"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-65878811-4');
-    </script>
-    <!-- Analytics END -->
-
-    <script>
+        // Counter
         // Set the date we're counting down to
         var countDownDate = new Date("Jul 31,2020 12:00:00").getTime();
 
@@ -83,7 +66,6 @@
             document.getElementById("countSec").innerHTML = seconds;
         }, 1000);
     </script>
-
 </head>
 
 <body>
@@ -647,7 +629,7 @@
                             shift = coded.length
                             link = ""
                             for (i = 0; i < coded.length; i++) {
-                                if (key.indexOf(coded.charAt(i)) == -1) {
+                                if (key.indexOf(coded.charAt(i)) === -1) {
                                     ltr = coded.charAt(i)
                                     link += (ltr)
                                 } else {
@@ -694,52 +676,7 @@
 <script src="./js/lazysizes.min.js" defer></script>
 <!-- Additional JS END -->
 
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-    window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#efefef",
-                    "text": "#404040"
-                },
-                "button": {
-                    "background": "#8ec760",
-                    "text": "#ffffff"
-                }
-            },
-            "theme": "edgeless",
-            "position": "bottom-right",
-            "type": "opt-out",
-            "content": {
-                "href": "https://www.differ.chat/privacy"
-            },
-            onInitialise: function (status) {
-                var type = this.options.type;
-                var didConsent = this.hasConsented();
-                if (type === 'opt-out' && !didConsent) {
-                    // disable cookies
-                    window['ga-disable-UA-65878811-4'] = true;
-                }
-            },
-            onStatusChange: function (status, chosenBefore) {
-                var type = this.options.type;
-                var didConsent = this.hasConsented();
-                if (type === 'opt-out' && !didConsent) {
-                    // disable cookies
-                    window['ga-disable-UA-65878811-4'] = true;
-                }
-            },
-            onRevokeChoice: function () {
-                var type = this.options.type;
-                if (type === 'opt-out') {
-                    // enable cookies
-                    window['ga-disable-UA-65878811-4'] = true;
-                }
-            }
-        }
-    );
-
-</script>
+<script type="text/javascript" src="./js/cookieconsent.min.js"></script>
+<script type="text/javascript" src="./js/cookie_consent_google_analytics.js"></script>
 </body>
-
 </html>
