@@ -1769,6 +1769,19 @@ a .countTimeContainerSignUp,
 
 /* ======== RESPONSIVE STYLES START ======== */
 
+.signUpPilot {
+    background-color: #F2BE69;
+    color: #ffffff;
+    cursor: pointer;
+    width: 60%;
+    margin: 0;
+    border-radius: 32px;
+    border: none;
+    outline: 0;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+}
 
 /* Larger screens */
 
@@ -1994,6 +2007,20 @@ a .countTimeContainerSignUp,
         top: 18px;
         left: 26px;
         width: 80%;
+    }
+
+    .signUpPilot {
+        background-color: #F2BE69;
+        color: #ffffff;
+        cursor: pointer;
+        width: 60%;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px;
+        margin: 0;
+        border-radius: 32px;
+        border: none;
+        outline: 0;
     }
 }
 
